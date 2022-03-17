@@ -1,0 +1,869 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 992px;
+    margin: auto;
+}
+
+header{
+  padding: 0px 10px 0px 30px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 992px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 10px;
+  }
+
+  .container div:nth-child(1) {
+    width: 100px;
+    font-size:12px;
+    color: #0065FC;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    border-top: 1px solid #0065FC;
+    padding-top: 10px;
+    text-align: center;
+}
+.container div:nth-child(2) {
+    width: 100px;
+    font-size:12px;
+    color: #0065FC;
+    margin: 10px;
+    margin-bottom: 0px;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 10px;
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+  }
+a:hover{
+    font-size: 13px;
+    color: silver;
+}
+
+
+/* this is the end of decorating Activitie and Accommodation links. 
+I have used flex-box to make them inline since divs are naturaly block elements. */  
+
+#logo {
+    width: 65px;
+    height: 35px;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 10px;
+}
+
+/*I have used  position: relative; bottom: 10px; to put logo img and links in the right corner to look more inline,
+because natural position does not match original photo */
+
+h1{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+
+/*Underneath logo there is a certaint text which needs to be done in h1 and p / this is decoration*/
+
+#search-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  
+  #search-box div:nth-child(1) {
+   padding: 7px;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+  }
+  
+   
+  #searchbox{
+    width: 250px;
+    height: 40px;
+  }
+  
+  #searchbox input,button{
+    width: 75%;
+    height: 100%;
+    border-right: 0px;
+    font-size: 15px;
+    border: 1px solid #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: black;
+  }
+  
+  #searchbox button{
+    width: 25%;
+    float: right;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .fa-map-marker-alt{
+      padding: 4px;
+  }
+
+
+/*with a lot of help from books and internet I have managed to make search-box like on the photo*/  
+
+
+
+#navigation-bar{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn2 :hover{
+  font-size: 13px;
+  color: silver;
+}
+.btn2{
+     width: auto;
+     height: 35px;
+     font-size: 14px;
+     font-weight: 600;
+     font-family: Raleway;
+     background: white;
+     border:1px solid rgb(214, 209, 209);
+     border-radius: 32px;
+     display: inline-block; 
+     margin: 5px; 
+     text-align: center;
+     padding-right: 10px;
+     position: relative;
+     top: 10px;
+     padding-top: 8px;
+}
+/*decoration of bubbles containing text and icon*/
+
+.fa-money-bill-wave, .fa-child, 
+.fa-heart, .fa-dog {
+  border: none;
+  background-color: #DEEBFF;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  border-radius: 100%;
+  float: left;
+  position: relative;
+  right: 2px;
+  bottom: 8px;
+}
+/*icon style*/
+
+#filters{
+  border-style: none;
+  width: 60px;
+}
+
+#money{
+    width:120px;
+}
+#family{
+    width:160px;
+}
+#heart{
+    width:120px;
+}
+#pets{
+    width:140px;
+    
+}
+/*adding width to each bubble*/
+
+.info{
+    display:flex;
+    margin-top: 40px;
+    max-width: 430px;
+    align-items: baseline;
+    position: relative;
+    bottom: 30px;
+}
+
+.info p
+{
+margin-left: 15px;
+font-size: 15px;
+color:rgb(82, 82, 82);
+}
+
+.info i
+{
+    border: 1px solid rgb(214, 209, 209);
+    color: #0065FC;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 100%;
+    font-size: 13px;
+    align-items: center ;
+}
+
+/*decorating info icon with additional border around it*/
+
+.accommodation_most-popular{
+    width: 972px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+  }
+   
+  .accommodation{
+    width: 70%;
+    background-color: #F2F2F2;
+    height: 470px;
+    margin: 2%;
+    margin-left: 0%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 30px;
+    
+    }
+  
+  .card1{
+    background: white;
+    width: 180px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 25px;
+  
+  }
+  
+  .marseille{
+    height: 10px;
+    width: 70%;
+    position: relative;
+    right: 60px;
+    margin-top: 20px;
+  }
+  .show_more{
+    width: 70%;
+    position: relative;
+    right: 65px;
+    top: 5px;
+    font-size: 15px;
+  }
+  
+  .card-image{
+    height: 80px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin: 2px;
+  }
+  
+  h2{
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+  }
+  
+  .in-marseille{
+    font-size: 11px;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+  }
+  
+  .img1 {
+    background-image: url('../images/photo1.jpg');
+    background-size: cover;
+    height: 80px;
+    background-position: center;
+  }
+  .img2 {
+    background-image: url('../images/photo2.jpg');
+    background-size: cover;
+    height: 80px;
+    background-position: center;
+    
+  }
+  .img3 {
+    background-image: url('../images/photo3.jpg');
+    background-size: cover;
+    height: 80px;
+    background-position: center;
+  }
+  .img4 {
+    background-image: url('../images/photo4.jpg');
+    background-size: cover;
+    height: 80px;
+    background-position: center;
+  }
+  .img5 {
+    background-image: url('../images/photo5.jpg');
+    background-size: cover;
+    height: 80px;
+    background-position: center;
+  }
+  .img6 {
+    background-image: url('../images/photo6.jpg');
+    background-size: cover;
+    height: 80px;
+    background-position: center;
+  }
+  
+  
+  a.links{
+  color: black;
+  }
+  a.links:hover{
+    color: grey;
+    background-color: white;
+    border-radius: 25px;
+  
+  }
+  a.link:active{
+  color: black;
+  }
+
+
+    
+  
+  .most_popular{
+    width: 30%;  
+    background-color: #F2F2F2;
+    height: 470px;
+    margin: 2%;
+    margin-left: 0%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 30px;
+  }
+  
+  /*external-link icon positioning*/
+  i.fa-external-link-alt{
+    position: relative;
+    left: 90px;  
+  }
+  
+  .marseille2{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .card2{
+    background-color: white;
+    width: 250px;
+    height: 115px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .card-image2{
+    width: 110px;
+    height: 110px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 2px;
+  }
+  .img7 {
+    background-image: url('../images/photo7.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .img8 {
+    background-image: url('../images/photo8.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .img9 {
+    background-image: url('../images/photo9.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card-IMG{
+    width: 140px;
+    margin-top: 5px;
+   
+  }
+  p.popular{
+    width: 140px;
+    text-align: left;
+    font-size: 11px;
+    position: relative;
+    left: 8px;
+  }
+  
+  h2.text-popular{
+    width: 140px;
+   text-align: left;
+   font-size: 12px;
+   margin-top: 10px;
+  }
+
+  /*stars positioning and decorating */
+  i.fa-star{
+    padding: 0px;
+    position: relative;
+    top: 4px;
+    left: 10px;
+  }
+  
+  .star{
+    position: relative;
+    top: 15px;
+  }
+  #star1{
+    position: relative;
+    top: 25px;
+  }
+
+  #activities{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    max-width: 100%;
+    margin-right: 0px;
+    grid-gap: 20px;
+    position: relative;
+    bottom: 120px;
+  }
+  
+  #activities div{
+    border-radius: 20px;
+  }
+  
+  .one{
+    grid-column: 1/-1;
+  
+  }
+  .two{
+    grid-column: 1/2;
+    grid-row: 2/5;
+    height: 300px;
+  
+  }
+  .three{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    height: 140px;
+  }
+  .four{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    height: 140px;
+  }
+  .five{
+    grid-column: 3/4;
+    grid-row: 2/5;
+    height: 300px;
+  }
+  .six{
+    grid-column: 4/5;
+    grid-row: 2/4;
+    height: 140px;
+  }
+  .seven{
+    grid-column: 4/5;
+    grid-row: 4/5;
+    height: 140px;
+  }
+  
+  #img1 {
+    background-image: url('../images/img1.jpg');
+    background-size: cover;    
+    height: 300px;
+    background-position: center;
+    
+  }
+  #img2 {
+    background-image: url('../images/img2.jpg');
+    background-size: cover;   
+    height: 140px;
+    background-position: center;
+  }
+  #img3 {
+    background-image: url('../images/img3.jpg');
+    background-size: cover;  
+    height: 140px;
+    background-position: center;
+  }
+  #img4 {
+    background-image: url('../images/img4.jpg');
+    background-size: cover;  
+    height: 300px;
+    background-position: center;
+  }
+  #img5 {
+    background-image: url('../images/img5.jpg');
+    background-size: cover;  
+    height: 140px;
+    background-position: center;
+  }
+  #img6 {
+    background-image: url('../images/img6.jpg');
+    background-size: cover;  
+    height: 140px;
+    background-position: center;
+  }
+  
+  h2.activities-in-marseille{
+  height: 40px;
+  background-color: white;
+  border: 1px solid seashell;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 10px;
+  box-shadow: inset 0 0 4px #DEEBFF;
+  }
+  
+  h2.style-large{
+    position: relative;
+    top: 270px;
+     padding-bottom: 20px;     
+  }
+  
+  h2.style-small{
+    position: relative;
+    top: 110px;
+    padding-bottom: 20px;
+  }
+/*footer style*/
+  footer{
+    width: 100%;
+    height: 160px;
+    background-color: #F2F2F2;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    bottom: 80px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;  
+  }
+  
+  footer div{
+    width: 320px;
+    padding: 30px;
+  }
+  
+  p.footer{
+    font-size: 12px;
+    color: darkslategray;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  h3{
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  @media screen and (max-width: 786px) {
+    body{
+      min-width: 786px;
+      margin: 0px;
+      padding: 0px;
+      }
+
+      .container{
+        width:100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .container div:nth-child(2) {
+        margin: 10px;
+      }
+      .accommodation_most-popular{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+      }
+      .accommodation{
+        width: 410px;
+        height: auto;
+  }
+
+  .most_popular{
+    width: 280px;
+    height: auto;
+  }
+
+
+  #activities{
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    height: auto;
+    }
+    
+    .one h1{
+      width: 768px;
+      margin-left: 10px;
+    }
+    
+     .two, .three, .four, .five, .six, .seven{
+      width: 210px;
+      height: 115px;
+      margin: 0px;
+      margin-left: 10px;
+      
+    }
+  
+  #img1, #img4{
+    height: 135px;
+  }
+  h2.style-large{
+    position: relative;
+    top: 100px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .show_more{
+    margin-bottom: 20px;
+    position: relative;
+    right: 40px;
+  }
+
+  .marseille{
+  font-size: 17px;
+  width: 100%;
+  position: relative;
+  left: 20px;
+  margin-bottom: 20px;
+  }
+
+  footer{
+    width: 748px;
+    position: relative;
+    top: 20px;
+  }
+
+}
+
+
+  @media screen and (max-width:300px) {
+    body{
+      min-width: 300px;
+      margin: 0px;
+      padding: 0px;
+ 
+      }
+      header{
+        width :100%;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .container{
+      width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 35px;
+      left: 1px;
+      margin-top: 10px;
+     
+    }
+    .container div:nth-child(1) {
+      border-bottom: 2px solid #0065FC;
+      border-top:none;
+      width: 145px;
+      font-size: 15px;
+      margin-right: 0px;
+      margin-left: 0px; 
+  }
+
+  .container div:nth-child(2) {
+    border-bottom: 2px solid #F2F2F2;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-top:none;
+    width: 145px;
+    font-size: 15px;
+}
+  #logo{
+    position: relative;
+    bottom: 55px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 5px;
+  }
+  h1, p{
+    margin-left: 20px;
+  }
+  #search-box{
+    max-width: 260px;
+    margin-left: 20px;
+  }
+#navigation-bar{
+  max-width: 260px;
+    margin-left: 20px;
+}
+  
+.info{
+  margin-left: 20px;
+}
+
+.info p{
+  margin-left: 10px;
+}
+
+.accommodation_most-popular, .accommodation, .most_popular, #activities, footer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+.accommodation_most-popular{
+  flex-direction: column-reverse;
+  margin-top: 20px;
+}
+
+.most_popular{
+padding-bottom: 20px;
+}
+
+.marseille{
+font-size: 17px;
+width: 100%;
+position: relative;
+left: 0px;
+margin-bottom: 20px;
+
+}
+.card1, .card2{
+  padding: 0px;
+  width: 280px;
+  height: 150px;
+  background: none; 
+  padding-top: 0px;
+  
+}
+
+.card1{
+  box-shadow: inset 0 0 4px #eff3f8;
+}
+
+.card2{
+  background-color: white;
+  width: 280px;
+  height: 115px;
+}
+.in-marseille{
+  margin-left: 0px;
+}
+
+.accommodation{
+ background: none; 
+}
+  
+a.links{
+  color: black;
+  }
+  a.links:hover{
+    color: grey;
+    background-color: white;
+    border-radius: 25px;
+  
+  }
+  a.links:active{
+  color: black;
+  }
+  
+.show_more{
+  margin-left: 65px;
+  margin-bottom: 20px;
+}
+
+.marseille2{
+margin-left: 0px;
+
+}
+
+i.fa-external-link-alt{
+margin-left: 30px;
+}
+
+
+#activities{
+position: relative;
+top: 0px;
+display: flex;
+flex-wrap: wrap;
+width: 300px;
+height: auto;
+}
+
+.one h1{
+  width: 280px;
+  margin-left: 10px;
+}
+
+ .two, .three, .four, .five, .six, .seven{
+  width: 280px;
+  height: 115px;
+  margin: 0px;
+  margin-left: 10px;
+  
+}
+#img1, #img4{
+  height: 135px;
+}
+
+  
+h2.style-large{
+  position: relative;
+  top: 100px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+.popular{
+  margin-left: 0px;
+}
+
+footer{
+  width: 280px;
+  position: relative;
+  top: 40px;
+}
+
+  }
