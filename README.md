@@ -5,8 +5,7 @@ Transform a mockup in to a website with HTML & CSS
 Web page : https://leamaljk.github.io/Projekt-2/
 
 1 . Integrating web content according to a model
- validated
-commentaries:
+ validated comments:
 
 Deliverable : HTML Code and CSS
 
