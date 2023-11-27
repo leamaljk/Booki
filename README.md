@@ -2,7 +2,7 @@
 
 Transform a mockup in to a website with HTML & CSS
 
-Web page : https://leamaljk.github.io/Projekt-2/
+Web page : https://leamaljk.github.io/Booki/
 
 1 . Integrating web content according to a model
  validated comments:
